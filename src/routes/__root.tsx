@@ -15,6 +15,7 @@ import appCss from "../styles/app.css?url"
 
 export const Route = createRootRoute({
   head: () => ({
+    title: "Ciira Kibebe | Software Engineer",
     meta: [
       {
         charSet: "utf-8",
@@ -24,10 +25,48 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Ciira Kibebe | Software Engineer",
+        name: "description",
+        content:
+          "Portfolio of Ciira Kibebe – Software Engineer specializing in TypeScript, React, Spring Boot, Django, Docker, GCP, and Kubernetes.",
+      },
+
+      // Open Graph (Facebook, WhatsApp, LinkedIn)
+      { property: "og:title", content: "Ciira Kibebe – Software Engineer" },
+      {
+        property: "og:description",
+        content:
+          "Portfolio showcasing projects in React, TypeScript, TanStack, Cloudflare.",
+      },
+      {
+        property: "og:image",
+        // use absolute URL
+        content:
+          "https://ciirakibebe.ciirakibebe-portfolio.workers.dev/og-image.png",
+      },
+      {
+        property: "og:url",
+        content: "https://ciirakibebe.ciirakibebe-portfolio.workers.dev/",
+      },
+      { property: "og:type", content: "website" },
+
+      // Twitter Card
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Ciira Kibebe – Software Engineer" },
+      {
+        name: "twitter:description",
+        content:
+          "Portfolio showcasing projects in React, TypeScript, TanStack, Cloudflare.",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://ciirakibebe.ciirakibebe-portfolio.workers.dev/og-image.png",
       },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+    ],
   }),
   component: RootComponent,
 })
