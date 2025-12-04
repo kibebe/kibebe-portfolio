@@ -112,8 +112,10 @@ function HomePage() {
       <Section id="featured" title="Featured Projects">
         <div className="grid md:grid-cols-2 gap-6">
           <ProjectCard
-            title="Task Tracker Dashboard"
-            description="A team task manager built with TanStack Table and Query."
+            title="SMEs Inventory Management System"
+            description="An intuitive system for small businesses to track and manage inventory."
+            git="https://github.com/lenniezelk/remysperfumes"
+            demo="https://remisperfumes.com/"
           />
           <ProjectCard
             title="API Explorer"

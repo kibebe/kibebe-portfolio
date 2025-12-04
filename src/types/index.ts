@@ -19,5 +19,6 @@ export interface NavbarProps {
 export interface ProjectCardProps {
   title: string
   description: string
-  link?: string
+  git?: string
+  demo?: string
 }
